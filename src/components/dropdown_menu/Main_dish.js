@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Navbar_basic = () => {
+const Main_dish = () => {
   return (
     <div>
-      
+      maindish
     </div>
   )
 }
 
-export default Navbar_basic
+export default Main_dish
