@@ -4,19 +4,19 @@ import "./header.css"
 
 const Dropdown2 = () => {
   return (
-    <div class="recipe_header">
-      <ul>
+    <div>
+      <ul class="recipe_header">
         <li>
-          <Link to="seafood">Seafood</Link>
+          <Link to="catogories/seafood">Seafood</Link>
         </li>
         <li>
-          <Link to="maindish">Maindish</Link>
+          <Link to="catogories/maindish">Maindish</Link>
         </li>
         <li>
-          <Link to="seafood">Seafood</Link>
+          <Link to="categories/vegetarian">Vegetarian</Link>
         </li>
         <li>
-          <Link to="dessert">Dessert</Link>
+          <Link to="catogories/dessert">Dessert</Link>
         </li>
       </ul>
     </div>

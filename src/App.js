@@ -16,10 +16,10 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="categories" element={<Categories />}>
-          <Route path="seafood" element={<Seafood />} />
-          <Route path="maindish" element={<Maindish />} />
-          <Route path="vegetarian" element={<Vegetarian />} />
-          <Route path="dessert" element={<Dessert />} />
+          <Route path="catogories/seafood" element={<Seafood />} />
+          <Route path="catogories/maindish" element={<Maindish />} />
+          <Route path="catogories/vegetarian" element={<Vegetarian />} />
+          <Route path="catogories/dessert" element={<Dessert />} />
         </Route>
       </Routes>
     </>
