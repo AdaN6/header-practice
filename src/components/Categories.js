@@ -1,11 +1,18 @@
-import React from 'react'
+import { Outlet, useLocation } from "react-router-dom"
+
 
 const Categories = () => {
-  return (
+
+const location = useLocation();
+// console.log(location);
+
+  return location.pathname === "/categories" ? (
     <div>
       Categories
     </div>
-  )
+  ) : (
+    <Outlet />
+  );
 }
 
 export default Categories

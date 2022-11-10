@@ -1,3 +1,12 @@
-.recipe_header{
-    list-style: none;
+.drop-down-submenu {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    position: absolute;
+    top: 60px
+}
+
+.nav-single-item {
+    display: flex;
+    height: 10vh;
 }

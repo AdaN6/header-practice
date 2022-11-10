@@ -5,18 +5,18 @@ import "./header.css"
 const Dropdown2 = () => {
   return (
     <div>
-      <ul class="recipe_header">
+      <ul class="drop-down-submenu">
         <li>
-          <Link to="catogories/seafood">Seafood</Link>
+          <Link to="categories/seafood">Seafood</Link>
         </li>
         <li>
-          <Link to="catogories/maindish">Maindish</Link>
+          <Link to="categories/maindish">Maindish</Link>
         </li>
         <li>
           <Link to="categories/vegetarian">Vegetarian</Link>
         </li>
         <li>
-          <Link to="catogories/dessert">Dessert</Link>
+          <Link to="categories/dessert">Dessert</Link>
         </li>
       </ul>
     </div>

@@ -1,27 +1,31 @@
-import React from 'react'
+import {useCallback, useState} from 'react'
 import { NavLink } from 'react-router-dom';
 import "./header.css"
 import Dropdown2 from "./Dropdown2";
 
 const Navbar_basic = () => {
+    const [isShown, setIsShown] = useToggle();
+
   return (
     <div>
-      <ul className="recipe_header">
+      <ul>
         <li>
           <NavLink to="/">Home</NavLink>
         </li>
-        <li className="category_button">
-          <NavLink to="#">Category</NavLink>
-          
-          <ul className="recipe_header submenu">
-            <li>
-              <Dropdown2 />
-            </li>
-          </ul>
+        <li onClick={setIsShown}>
+          {isShown ? <Dropdown2 /> : !(<Dropdown2 />)}
+          <NavLink to="categories"> Category </NavLink>
         </li>
       </ul>
     </div>
   );
+}
+
+const useToggle = (initialState = false) => {
+    const [state, setState] = useState(initialState);
+
+    const toggle = useCallback(() => setState((state) => !state), []);
+    return [state, toggle]
 }
 
 export default Navbar_basic
