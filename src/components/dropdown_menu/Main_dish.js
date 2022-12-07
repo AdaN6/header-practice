@@ -3,7 +3,7 @@ import React from 'react'
 const Main_dish = () => {
   return (
     <div>
-      maindish
+      Maindish!!!
     </div>
   )
 }
